@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #fffcea;
+  padding-top: 70px;
+}
+.none{
+  display: none !important;
+}
+:root {
+  --main-bg-color: linear-gradient(135deg, #ff6900, #fb2c36);
+  --main-color: #f54a00;
+  --seconde-main-color: #ff6900;
+  --light-bg-color: #fff9eb
+}
+nav {
+  border-bottom: 2px solid #ffedd4;
+}
+.logo-bg {
+  width: 45px;
+  height: 45px;
+  background: var(--main-bg-color);
+}
+
+.nav-item img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ffb86a;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--main-color);
+}
+.img-box {
+  position: relative;
+  height: 100%;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  max-height: 800px;
+  object-fit: cover;
+}
+
+.img-box span {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.info-box {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+}
+.h-dark {
+  color: #9F0712;
+}
+
+.warning {
+  background-color: rgb(255, 244, 244);
+  position: relative;
+}
+
+.warning::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: red;
+  left: 0;
+  top: 0;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.icons-sec i {
+  background-color: #ffe9d0;
+  color: var(--main-color);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.icons-sec i:hover {
+  background-color: #ffd7a8;
+}
+
+.nav-tabs .nav-link {
+  color: rgb(125, 120, 120);
+  text-decoration: none;
+  border: none;
+  border-bottom: none;
+}
+
+.tabs .nav-link:not(.active):hover {
+  color: rgb(51, 51, 51);
+}
+.tabs .nav-link.active {
+  color: var(--main-color);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+#ingredients.tab-pane.active {
+  background-color: var(--light-bg-color);
+}
+.tab-pane.active span {
+  background-color: var(--seconde-main-color);
+}
+.btn {
+  background: var(--main-bg-color);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #ff5900, #f50410);
+  transform: scale(1.1);
+}
+.tab-content > .tab-pane {
+  display: none;
+}
+.tab-content > .tab-pane.active {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#instructions {
+  height: 350px;
+  overflow-y: auto;
+}
+#instructions::-webkit-scrollbar {
+  width: 8px;
+}
+.tab-pane::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.tab-pane::-webkit-scrollbar-thumb {
+  background: #ffded5;
+  border-radius: 10px;
+}
+#instructions::-webkit-scrollbar-thumb:hover {
+  background: #933a04;
+  border-radius: 10px;
+}
+
+.text-calories {
+  background-color: #ffe9d0;
+  color: var(--main-color);
+  width: 30px;
+  height: 30px;
+}
+
+.text-protein {
+  background-color: #dbeafe;
+  color: #155dfc;
+  width: 30px;
+  height: 30px;
+}
+.text-carbs {
+  background-color: #fef9c2;
+  color: #d08700;
+  width: 30px;
+  height: 30px;
+}
+.text-fat {
+  background-color: #ffe2e2;
+  color: red;
+  width: 30px;
+  height: 30px;
+}
+.text-fiber {
+  background-color: #dbfce7;
+  color: green;
+  width: 30px;
+  height: 30px;
+}
+.text-sodium {
+  background-color: #fce7f3;
+  color: #e60076;
+  width: 30px;
+  height: 30px;
+}
+
+#tips .list-group-item{
+background-color: var(--light-bg-color);
+   position: relative; 
+}
+
+#tips .list-group-item span{
+    background-color: #E17100;
+}
+
+#tips .list-group-item::before {
+    content: "";
+    position: absolute; 
+    width: 5px;
+    height: 100%;
+    background-color: #f7a552;
+    left: 0;
+    top: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; 
+}
+
